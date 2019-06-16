@@ -12,5 +12,10 @@ node {
         sh 'virtualenv env && . env/bin/activate'
         sh 'pip3 install --upgrade -r magazine_luiza/requirements.txt'
     }
+    
+    stage('Test')
+    {
+        sh 'python3 manage.py test'
+    }
    
 }
