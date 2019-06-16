@@ -9,8 +9,8 @@ node {
     stage('Build')
     {
         sh 'cd magazine_luiza/'
-        sh 'virtualenv env && source env/bin/activate'
-        sh 'cd env/bin/ && source activate'
+        sh 'virtualenv env && source .env/bin/activate'
+        //sh 'cd env/bin/ && source activate'
         sh 'pip3 install --upgrade -r requirements.txt'
     }
    
