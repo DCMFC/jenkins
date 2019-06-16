@@ -15,7 +15,7 @@ node {
     
     stage('Test')
     {
-        sh 'python3 manage.py test'
+        sh 'python3 magazine_luiza/manage.py test'
     }
    
 }
