@@ -19,11 +19,10 @@ node {
     }
     
     stage('SonarQube') {
-        //def scannerHome = tool 'SonarQubeScanner';
-        //withSonarQubeEnv('http://127.0.0.1:9000') {
-            //sh "${scannerHome}/bin/sonar-scanner"
-        //}
-        sh 'sonar-scanner -Dsonar.projectKey=290a06dcf86c95266f8ddb743e436f10e1f49e20 -Dsonar.sources=.'
+        def scannerHome = tool 'SonarQubeScanner';
+        withSonarQubeEnv('sonarqube') {
+            sh "${scannerHome}/bin/sonar-scanner"
+        }
     }
    
 }
