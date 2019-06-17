@@ -21,7 +21,7 @@ node {
     stage('SonarQube') {
         def scannerHome = tool 'SonarQubeScanner';
         withSonarQubeEnv('sonarqube') {
-            sh "${scannerHome}/bin/sonar-scanner -X sonar.projectKey=magazine_luiza"
+            sh "${scannerHome}/bin/sonar-scanner"
         }
     }
    
