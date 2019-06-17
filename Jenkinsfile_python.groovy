@@ -21,7 +21,7 @@ node {
     stage('SonarQube') {
         def scannerHome = tool 'SonarQubeScanner';
         withSonarQubeEnv('sonarqube') {
-            sh "${scannerHome}/bin/sonar-scanner Dsonar.login=admin Dsonar.password=admin"
+            sh "${scannerHome}/bin/sonar-scanner Dsonar.login=08739ca0fb17d55c0f41ef1b23bb0a03b1ffcb31"
         }
     }
    
