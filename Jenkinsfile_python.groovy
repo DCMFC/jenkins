@@ -17,5 +17,5 @@ node {
     {
         sh 'python3 magazine_luiza/manage.py test'
     }
-   
+   290a06dcf86c95266f8ddb743e436f10e1f49e20
 }
