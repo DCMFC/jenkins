@@ -15,8 +15,7 @@ node {
     
     stage('Test')
     {
-        sh 'cd magazine_luiza/api/'
-        sh 'python3 test.py'
+        sh 'python3 magazine_luiza/api/tests.py'
     }
     
     stage('SonarQube') {
