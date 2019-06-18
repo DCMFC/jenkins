@@ -15,9 +15,7 @@ node {
     
     stage('Test')
     {
-        sh 'virtualenv env && . env/bin/activate'
         sh 'python3 magazine_luiza/manage.py test'
-        sh 'nosetests --with-coverage --cover-xml --cover-package=magazine_luiza --with-xunit test'
     }
     
     stage('SonarQube') {
