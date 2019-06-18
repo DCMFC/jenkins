@@ -10,7 +10,7 @@ node {
     {
         sh 'cd magazine_luiza/'
         sh 'virtualenv env && . env/bin/activate'
-        sh 'pip3 install --upgrade -r magazine_luiza/requirements.txt'
+        sh 'pip3 install -r magazine_luiza/requirements.txt'
     }
     
     stage('Test')
